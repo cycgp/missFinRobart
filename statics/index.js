@@ -1,8 +1,8 @@
 window.onload = function speak(){
 	var synth = window.speechSynthesis;
 	var utterThis = new SpeechSynthesisUtterance('您好！我是金融智能客服"蘿蔔特"，很高興為您服務！請問需要什麼呢？');
-	utterThis.pitch = 1.9;
-	utterThis.rate = 1.5;
+	utterThis.pitch = 1;
+	utterThis.rate = 1;
 	synth.speak(utterThis);
 };
 $( document ).ready(function() {
@@ -37,8 +37,8 @@ $(function() {
 	function speak(inputTxt){
 	  if(inputTxt !== ''){
 		var utterThis = new SpeechSynthesisUtterance(inputTxt);
-		utterThis.pitch = 1.9;
-		utterThis.rate = 1.5;
+		utterThis.pitch = 1;
+		utterThis.rate = 1;
 		synth.speak(utterThis);
 	  }
 	}
